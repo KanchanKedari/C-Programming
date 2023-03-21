@@ -1,0 +1,18 @@
+#include <stdio.h>  
+int main()  
+{  
+    int num, i = 1; // initialise a variable  
+    printf (" Enter a number to generate the table: ");  
+    scanf (" %d", &num); // take a positive number from the user  
+      
+    printf ("\n Table of %d \n ", num);  
+      
+    // use while loop to evaluate   
+    while (i <= 10)  
+    {  
+        // print the table  
+        printf (" %d x %d = %d \n", num, i, (num * i));  
+        i++; // incremented by 1   
+    }  
+    return 0;  
+}  
