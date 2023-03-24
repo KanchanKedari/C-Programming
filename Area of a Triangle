@@ -1,0 +1,17 @@
+float area(float b,float h)
+{
+	return (b*h)/2;
+}
+ 
+int main()
+{
+	float b,h,a;
+	printf("enter base of triangle: ");
+	scanf("%f",&b);
+	
+	printf("enter height of the triangle: ");
+	scanf("%f",&h);
+	a=area(b,h);
+	printf("Area Of Triangle : %f\n",a);
+	return 0;
+}
