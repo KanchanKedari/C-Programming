@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+   int i,j,r,c;
+   printf("\n Enter no. of rows:");
+   scanf("%d",&r);
+   printf("\n Enter no. of columns:");
+   scanf("%d",&c);
+   for(i=0;i<r;i++)   //nested for loop i for row and j for column
+    {
+     for(j=0;j<c;j++)
+        printf(" *");
+     printf("\n");
+    }
+   return 0;
+  }
