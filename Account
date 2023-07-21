@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int accNo;
+	char accName[10];
+	int accBal,anBal;
+	float tax;
+	float finalBal;
+
+	printf("\nEnter account number : ");
+	scanf("%d",&accNo);
+	printf("\nEnter Customer name : ");
+	scanf("%s",accName);
+	printf("\nEnter account Balance : ");
+	scanf("%d",&accBal);
+
+	anBal = accBal*12;
+	tax = 0.05*anBal;
+	finalBal = anBal - tax;
+
+
+	printf("\nEnter account number = %d",accNo);
+	printf("\nCustomer name = %s",accName);
+	printf("\nAccount Balance = %d",accBal);
+	printf("\nAnnual Balance = %d",anBal);
+	printf("\nTax = %.2f",tax);
+	printf("\nFinal balance = %.2f",finalBal);
+
+
+	return 0;
+}
